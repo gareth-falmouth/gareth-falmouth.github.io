@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Asteroids</title>
+    <script src="lib/vector2.js"></script>
+    <script src="lib/vector3.js"></script>
+    <script src="lib/vector4.js"></script>
+    <script src="lib/matrix.js"></script>
+        <script src="lib/rect.js"></script>
+    <script src="lib/size.js"></script>
+    <script src="lib/circularcollider.js"></script>
+    <script src="lib/rectcollider.js"></script>
+
+    <script src="lib/input_keycodes.js"></script>
+    <script src="lib/input.js"></script>
+    <script src="lib/canvas.js"></script>
+    <script src="lib/gazcanvas.js"></script>
+    <script src="lib/statemachine.js"></script>
+    <script src="lib/httpclient.js"></script>
+    <script src="lib/texturepage.js"></script>
+
+
+    <script src="game/gamestates.js"></script>
+    <script src="game/baseobject.js"></script>
+    <script src="game/ship.js"></script>
+    <script src="game/rock.js"></script>
+    <script src="game/bullet.js"></script>
+    <script src="game/explosionmanager.js"></script>
+
+    <script src="game/astgame.js"></script>
+
+    <!--https://fonts.google.com/-->
+    <link href='https://fonts.googleapis.com/css?family=Archivo Black' rel='stylesheet'>
+</head>
+<body>
+<canvas id="canvas"></canvas>
+</body>
+</html>
+
+<script>
+    document.documentElement.style.overflow = 'hidden';  // firefox, chrome
+    document.body.scroll = "no"; // ie only
+    document.body.style.padding = 0;
+    document.body.style.margin = 0;
+
+    AstGameInst.Run();
+</script>

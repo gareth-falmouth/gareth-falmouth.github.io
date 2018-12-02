@@ -1,0 +1,1 @@
+xcopy lib ../lib /Y
